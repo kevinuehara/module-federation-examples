@@ -1,0 +1,15 @@
+{
+  "name": "react-microfrontends",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Kevin Uehara",
+  "license": "ISC",
+  "description": "",
+ "scripts": {
+    "dev": "concurrently \"yarn --cwd packages/host dev\" \"yarn --cwd packages/remote1 dev\" \"yarn --cwd packages/remote2 dev\" \"yarn --cwd packages/remote2-alternative dev\""
+  },
+  
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
