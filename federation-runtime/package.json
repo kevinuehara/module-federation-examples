@@ -1,0 +1,15 @@
+{
+  "name": "federation-runtime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Kevin Uehara",
+  "license": "ISC",
+  "scripts": {
+    "dev": "concurrently \"yarn --cwd packages/rspack-js-entry-provider dev\" \"yarn --cwd packages/rs-manifest-provider dev\" \"yarn --cwd packages/host dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
